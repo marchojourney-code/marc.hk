@@ -1,13 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-HK">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marc's Page</title>
+    <!-- 這裡是 CSS，用來讓網頁變漂亮 -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        /* 導航列樣式 */
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        /* 圓形大頭貼樣式 */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+            border: 4px solid #007bff;
+        }
+        .skills {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            background: #e9ecef;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
+
+<div class="container">
+    <!-- 分頁導航列 -->
+    <nav>
+        <a href="index.html">首頁 (Home)</a>
+        <a href="about.html">關於我 (About)</a>
+    </nav>
+
     <h1>Marc Info!</h1>
-    <p>💻 DIGITAL MEDIA(BA)</p>
-    <p>🎓 Information Systems and Web Technologies(BA)</p>
-    <p>💻 MCSE</p>
-    <p>📶 CCNA</p>
+    
+    <!-- 圖片：你可以把 src 換成你自己的照片網址 -->
+    <img src="https://picsum.photos/200/200" alt="Marc's Profile Picture" class="profile-pic">
+
+    <p>歡迎來到我的個人網站！</p>
+
+    <ul class="skills">
+        <li>💻 DIGITAL MEDIA (BA)</li>
+        <li>🎓 Information Systems and Web Technologies (BA)</li>
+        <li>💻 MCSE</li>
+        <li>📶 CCNA</li>
+    </ul>
+</div>
+
 </body>
 </html>
