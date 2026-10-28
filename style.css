@@ -53,3 +53,12 @@ h1 {
     border-radius: 5px;
     font-weight: 500;
 }
+
+/* 控制 Logo 圖片的大小與對齊 */
+.logo-img {
+    height: 20px; /* 把 Logo 高度限制在 20px */
+    width: auto;  /* 寬度自動等比縮放 */
+    vertical-align: middle; /* 讓圖片跟旁邊的文字垂直置中對齊 */
+    margin-right: 8px; /* 圖片右邊留一點空隙，不要跟文字黏在一起 */
+    margin-bottom: 3px; /* 微調圖片位置，讓它看起來更居中 */
+}
